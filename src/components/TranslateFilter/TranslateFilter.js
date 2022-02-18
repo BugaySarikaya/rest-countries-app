@@ -19,19 +19,11 @@ const TranslateFilter = () => {
           {translateArray &&
             translateArray.length > 0 &&
             translateArray.map((x) => (
-              <option key={x} value={x === 'or' ? '' : x}>
+              <option key={x} value={x === 'en' ? '' : x}>
                 {x}
               </option>
             ))}
         </select>
-
-        {/*       <option value="Base">All Regions</option>
-          <option value="Africa">Africa</option>
-          <option value="Americas">Americas</option>
-          <option value="Asia">Asia</option>
-          <option value="Europe">Europe</option>
-          <option value="Oceania">Oceania</option>
-        </select> */}
       </div>
     </React.Fragment>
   );

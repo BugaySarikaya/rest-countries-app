@@ -20,7 +20,7 @@ export const CountryContextProvider = (props) => {
   const [theme, setTheme] = useState('darkTheme');
   const [nameFilter, setNameFilter] = useState('');
   const [regionFilter, setRegionFilter] = useState('');
-  const [translateArray, setTranslateArray] = useState([]);
+  const [translateArray, setTranslateArray] = useState(['en']);
 
   useEffect(() => {
     async function loadCountry() {
@@ -40,7 +40,7 @@ export const CountryContextProvider = (props) => {
               });
           }
 
-          for (const [key, value] of Object.entries(countryData.translations)) {
+          for (const [key] of Object.entries(countryData.translations)) {
             if (!translateList.includes(key)) {
               translateList.push(key);
             }
@@ -70,7 +70,7 @@ export const CountryContextProvider = (props) => {
           };
         });
 
-        translateList.push('or');
+        translateList.unshift('en');
 
         setBaseCountries(transformedCountries);
         setCountries(transformedCountries);
