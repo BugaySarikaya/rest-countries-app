@@ -1,0 +1,36 @@
+:root {
+  --dark-mode-elements: hsl(209, 23%, 22%);
+  --dark-mode-background: hsl(207, 26%, 17%);
+  --dark-mode-text: hsl(0, 0%, 100%);
+  --light-mode-text: hsl(200, 15%, 8%);
+  --light-mode-background: hsl(0, 0%, 98%);
+  --light-mode-elements: hsl(0, 0%, 100%);
+  --font-size-home: 14px;
+  --font-size-detail: 16px;
+}
+
+.darkTheme {
+  background-color: var(--dark-mode-elements);
+  color: var(--dark-mode-text);
+}
+
+input[type='text'].darkTheme::placeholder {
+  color: var(--dark-mode-text);
+}
+
+select.darkTheme {
+  border-color: var(--dark-mode-elements);
+}
+
+.lightTheme {
+  background-color: var(--light-mode-elements);
+  color: var(--light-mode-text);
+}
+
+input[type='text'].lightTheme::placeholder {
+  color: var(--light-mode-text);
+}
+
+select.lightTheme {
+  border-color: var(--light-mode-elements);
+}

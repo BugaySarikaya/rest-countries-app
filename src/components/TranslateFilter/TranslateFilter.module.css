@@ -1,0 +1,39 @@
+.dropdownContainer {
+  font-family: inherit;
+}
+
+.dropdownContainer select {
+  width: 14rem;
+  outline: none;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.78rem 1rem;
+  border-radius: 5px;
+}
+
+@media (min-width: 562px) and (max-width: 1000px) {
+  .dropdownContainer select {
+    width: 10rem;
+  }
+}
+
+@media (max-width: 561px) {
+  .dropdownContainer {
+    width: 100%;
+    padding-top: 4px;
+  }
+
+  .dropdownContainer select {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .dropdownContainer {
+    font-size: 12px;
+  }
+
+  .dropdownContainer select {
+    padding: 0.65rem 1rem;
+  }
+}

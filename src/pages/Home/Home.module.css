@@ -1,0 +1,17 @@
+.filterContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  font-size: var(--font-size-home);
+  font-weight: 600;
+}
+
+.darkTheme {
+  background-color: var(--dark-mode-background);
+}
+
+.lightTheme {
+  background-color: var(--light-mode-background);
+}

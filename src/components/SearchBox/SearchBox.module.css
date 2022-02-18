@@ -1,0 +1,41 @@
+.searchBoxContainer {
+  padding: 1rem 2rem;
+  font-family: inherit;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.searchBoxContainer input[type='text'] {
+  width: 20rem;
+  margin-left: 1.2rem;
+  border: none;
+  outline: none;
+  font-size: inherit;
+}
+
+@media (min-width: 562px) and (max-width: 796px) {
+  .searchBoxContainer input[type='text'] {
+    width: 10rem;
+  }
+}
+
+@media (max-width: 561px) {
+  .searchBoxContainer {
+    width: 100%;
+  }
+
+  .searchBoxContainer input[type='text'] {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .searchBoxContainer {
+    font-size: 12px;
+    padding: 1rem 1rem;
+  }
+}
